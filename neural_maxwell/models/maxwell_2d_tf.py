@@ -96,3 +96,4 @@ class MaxwellSolverPML2D(tf.keras.Model):
             J[self.src_y + self.buffer_length, self.src_x + self.buffer_length] = -(SCALE / L0) * MU0 * OMEGA_1550
 
         return residuals - J
+
